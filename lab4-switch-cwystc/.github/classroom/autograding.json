@@ -1,0 +1,104 @@
+{
+  "tests": [
+    {
+      "name": "Topology1.Forwarding",
+      "setup": "mkdir -p build && if [  ! -d \"test_remote/\"  ]; then (git clone https://github.com/N2Sys-EDU/lab4-test test_remote && cd test_remote && mkdir -p build && cd build && cmake .. && make && cd ../.. && cp ./test_remote/liblab4runtime.a build && cp ./test_remote/build/lab4_test build) fi && cd build && cmake .. && make",
+      "run": "cd build && ./lab4_test --gtest_filter=Topology1.Forwarding",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "Topology1.SwitchAging",
+      "setup": "mkdir -p build && if [  ! -d \"test_remote/\"  ]; then (git clone https://github.com/N2Sys-EDU/lab4-test test_remote && cd test_remote && mkdir -p build && cd build && cmake .. && make && cd ../.. && cp ./test_remote/liblab4runtime.a build && cp ./test_remote/build/lab4_test build) fi && cd build && cmake .. && make",
+      "run": "cd build && ./lab4_test --gtest_filter=Topology1.SwitchAging",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "Topology2.Forwarding",
+      "setup": "mkdir -p build && if [  ! -d \"test_remote/\"  ]; then (git clone https://github.com/N2Sys-EDU/lab4-test test_remote && cd test_remote && mkdir -p build && cd build && cmake .. && make && cd ../.. && cp ./test_remote/liblab4runtime.a build && cp ./test_remote/build/lab4_test build) fi && cd build && cmake .. && make",
+      "run": "cd build && ./lab4_test --gtest_filter=Topology2.Forwarding",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "Topology2.SwitchAging",
+      "setup": "mkdir -p build && if [  ! -d \"test_remote/\"  ]; then (git clone https://github.com/N2Sys-EDU/lab4-test test_remote && cd test_remote && mkdir -p build && cd build && cmake .. && make && cd ../.. && cp ./test_remote/liblab4runtime.a build && cp ./test_remote/build/lab4_test build) fi && cd build && cmake .. && make",
+      "run": "cd build && ./lab4_test --gtest_filter=Topology2.SwitchAging",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "Topology3.Forwarding",
+      "setup": "mkdir -p build && if [  ! -d \"test_remote/\"  ]; then (git clone https://github.com/N2Sys-EDU/lab4-test test_remote && cd test_remote && mkdir -p build && cd build && cmake .. && make && cd ../.. && cp ./test_remote/liblab4runtime.a build && cp ./test_remote/build/lab4_test build) fi && cd build && cmake .. && make",
+      "run": "cd build && ./lab4_test --gtest_filter=Topology3.Forwarding",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "Topology3.SwitchAging",
+      "setup": "mkdir -p build && if [  ! -d \"test_remote/\"  ]; then (git clone https://github.com/N2Sys-EDU/lab4-test test_remote && cd test_remote && mkdir -p build && cd build && cmake .. && make && cd ../.. && cp ./test_remote/liblab4runtime.a build && cp ./test_remote/build/lab4_test build) fi && cd build && cmake .. && make",
+      "run": "cd build && ./lab4_test --gtest_filter=Topology3.SwitchAging",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 15
+    },
+    {
+      "name": "Topology4.Forwarding",
+      "setup": "mkdir -p build && if [  ! -d \"test_remote/\"  ]; then (git clone https://github.com/N2Sys-EDU/lab4-test test_remote && cd test_remote && mkdir -p build && cd build && cmake .. && make && cd ../.. && cp ./test_remote/liblab4runtime.a build && cp ./test_remote/build/lab4_test build) fi && cd build && cmake .. && make",
+      "run": "cd build && ./lab4_test --gtest_filter=Topology4.Forwarding",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "Topology4.Mixing",
+      "setup": "mkdir -p build && if [  ! -d \"test_remote/\"  ]; then (git clone https://github.com/N2Sys-EDU/lab4-test test_remote && cd test_remote && mkdir -p build && cd build && cmake .. && make && cd ../.. && cp ./test_remote/liblab4runtime.a build && cp ./test_remote/build/lab4_test build) fi && cd build && cmake .. && make",
+      "run": "cd build && ./lab4_test --gtest_filter=Topology4.Mixing",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 15
+    },
+    {
+      "name": "Topology5.Mixing",
+      "setup": "mkdir -p build && if [  ! -d \"test_remote/\"  ]; then (git clone https://github.com/N2Sys-EDU/lab4-test test_remote && cd test_remote && mkdir -p build && cd build && cmake .. && make && cd ../.. && cp ./test_remote/liblab4runtime.a build && cp ./test_remote/build/lab4_test build) fi && cd build && cmake .. && make",
+      "run": "cd build && ./lab4_test --gtest_filter=Topology5.Mixing",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "Topology6.Mixing",
+      "setup": "mkdir -p build && if [  ! -d \"test_remote/\"  ]; then (git clone https://github.com/N2Sys-EDU/lab4-test test_remote && cd test_remote && mkdir -p build && cd build && cmake .. && make && cd ../.. && cp ./test_remote/liblab4runtime.a build && cp ./test_remote/build/lab4_test build) fi && cd build && cmake .. && make",
+      "run": "cd build && ./lab4_test --gtest_filter=Topology6.Mixing",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    }
+  ]
+}

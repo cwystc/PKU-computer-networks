@@ -1,0 +1,4 @@
+[submodule "test_local"]
+	path = test_local
+	url = https://github.com/N2Sys-EDU/lab4-test
+	branch = main

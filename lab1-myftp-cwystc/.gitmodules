@@ -1,0 +1,4 @@
+[submodule "test_local"]
+	path = test_local
+	url = git@github.com:N2Sys-EDU/Lab1-myFTP-Test.git
+	branch = main

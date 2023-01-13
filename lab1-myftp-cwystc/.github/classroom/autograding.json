@@ -1,0 +1,134 @@
+{
+  "tests": [
+    {
+      "name": "FTPServer.Open",
+      "setup": "mkdir -p build && cd build && cmake .. && make && cd .. && if [ ! -d \"test_remote/\" ]; then (git clone https://github.com/N2Sys-EDU/Lab1-myFTP-Test.git test_remote && cp test_remote/ftp_server_std build/ && cp test_remote/ftp_client_std build/ && cd test_remote && mkdir -p build && cd build && cmake .. && make && cd ../.. && cp test_remote/build/ftp_test build/) fi",
+      "run": "cd build && ./ftp_test --gtest_filter=FTPServer.Open",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "FTPServer.Auth",
+      "setup": "mkdir -p build && cd build && cmake .. && make && cd .. && if [ ! -d \"test_remote/\" ]; then (git clone https://github.com/N2Sys-EDU/Lab1-myFTP-Test.git test_remote && cp test_remote/ftp_server_std build/ && cp test_remote/ftp_client_std build/ && cd test_remote && mkdir -p build && cd build && cmake .. && make && cd ../.. && cp test_remote/build/ftp_test build/) fi",
+      "run": "cd build && ./ftp_test --gtest_filter=FTPServer.Auth",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "FTPServer.Get",
+      "setup": "mkdir -p build && cd build && cmake .. && make && cd .. && if [ ! -d \"test_remote/\" ]; then (git clone https://github.com/N2Sys-EDU/Lab1-myFTP-Test.git test_remote && cp test_remote/ftp_server_std build/ && cp test_remote/ftp_client_std build/ && cd test_remote && mkdir -p build && cd build && cmake .. && make && cd ../.. && cp test_remote/build/ftp_test build/) fi",
+      "run": "cd build && ./ftp_test --gtest_filter=FTPServer.Get",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "FTPServer.Put",
+      "setup": "mkdir -p build && cd build && cmake .. && make && cd .. && if [ ! -d \"test_remote/\" ]; then (git clone https://github.com/N2Sys-EDU/Lab1-myFTP-Test.git test_remote && cp test_remote/ftp_server_std build/ && cp test_remote/ftp_client_std build/ && cd test_remote && mkdir -p build && cd build && cmake .. && make && cd ../.. && cp test_remote/build/ftp_test build/) fi",
+      "run": "cd build && ./ftp_test --gtest_filter=FTPServer.Put",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "FTPServer.List",
+      "setup": "mkdir -p build && cd build && cmake .. && make && cd .. && if [ ! -d \"test_remote/\" ]; then (git clone https://github.com/N2Sys-EDU/Lab1-myFTP-Test.git test_remote && cp test_remote/ftp_server_std build/ && cp test_remote/ftp_client_std build/ && cd test_remote && mkdir -p build && cd build && cmake .. && make && cd ../.. && cp test_remote/build/ftp_test build/) fi",
+      "run": "cd build && ./ftp_test --gtest_filter=FTPServer.List",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "FTPClient.Open",
+      "setup": "mkdir -p build && cd build && cmake .. && make && cd .. && if [ ! -d \"test_remote/\" ]; then (git clone https://github.com/N2Sys-EDU/Lab1-myFTP-Test.git test_remote && cp test_remote/ftp_server_std build/ && cp test_remote/ftp_client_std build/ && cd test_remote && mkdir -p build && cd build && cmake .. && make && cd ../.. && cp test_remote/build/ftp_test build/) fi",
+      "run": "cd build && ./ftp_test --gtest_filter=FTPClient.Open",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "FTPClient.Auth",
+      "setup": "mkdir -p build && cd build && cmake .. && make && cd .. && if [ ! -d \"test_remote/\" ]; then (git clone https://github.com/N2Sys-EDU/Lab1-myFTP-Test.git test_remote && cp test_remote/ftp_server_std build/ && cp test_remote/ftp_client_std build/ && cd test_remote && mkdir -p build && cd build && cmake .. && make && cd ../.. && cp test_remote/build/ftp_test build/) fi",
+      "run": "cd build && ./ftp_test --gtest_filter=FTPClient.Auth",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "FTPClient.Get",
+      "setup": "mkdir -p build && cd build && cmake .. && make && cd .. && if [ ! -d \"test_remote/\" ]; then (git clone https://github.com/N2Sys-EDU/Lab1-myFTP-Test.git test_remote && cp test_remote/ftp_server_std build/ && cp test_remote/ftp_client_std build/ && cd test_remote && mkdir -p build && cd build && cmake .. && make && cd ../.. && cp test_remote/build/ftp_test build/) fi",
+      "run": "cd build && ./ftp_test --gtest_filter=FTPClient.Get",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "FTPClient.Put",
+      "setup": "mkdir -p build && cd build && cmake .. && make && cd .. && if [ ! -d \"test_remote/\" ]; then (git clone https://github.com/N2Sys-EDU/Lab1-myFTP-Test.git test_remote && cp test_remote/ftp_server_std build/ && cp test_remote/ftp_client_std build/ && cd test_remote && mkdir -p build && cd build && cmake .. && make && cd ../.. && cp test_remote/build/ftp_test build/) fi",
+      "run": "cd build && ./ftp_test --gtest_filter=FTPClient.Put",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "FTPServer.PutBig",
+      "setup": "mkdir -p build && cd build && cmake .. && make && cd .. && if [ ! -d \"test_remote/\" ]; then (git clone https://github.com/N2Sys-EDU/Lab1-myFTP-Test.git test_remote && cp test_remote/ftp_server_std build/ && cp test_remote/ftp_client_std build/ && cd test_remote && mkdir -p build && cd build && cmake .. && make && cd ../.. && cp test_remote/build/ftp_test build/) fi",
+      "run": "cd build && ./ftp_test --gtest_filter=FTPServer.PutBig",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "FTPServer.GetBig",
+      "setup": "mkdir -p build && cd build && cmake .. && make && cd .. && if [ ! -d \"test_remote/\" ]; then (git clone https://github.com/N2Sys-EDU/Lab1-myFTP-Test.git test_remote && cp test_remote/ftp_server_std build/ && cp test_remote/ftp_client_std build/ && cd test_remote && mkdir -p build && cd build && cmake .. && make && cd ../.. && cp test_remote/build/ftp_test build/) fi",
+      "run": "cd build && ./ftp_test --gtest_filter=FTPServer.GetBig",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "FTPClient.GetBig",
+      "setup": "mkdir -p build && cd build && cmake .. && make && cd .. && if [ ! -d \"test_remote/\" ]; then (git clone https://github.com/N2Sys-EDU/Lab1-myFTP-Test.git test_remote && cp test_remote/ftp_server_std build/ && cp test_remote/ftp_client_std build/ && cd test_remote && mkdir -p build && cd build && cmake .. && make && cd ../.. && cp test_remote/build/ftp_test build/) fi",
+      "run": "cd build && ./ftp_test --gtest_filter=FTPClient.GetBig",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 5
+    },
+    {
+      "name": "FTPClient.PutBig",
+      "setup": "mkdir -p build && cd build && cmake .. && make && cd .. && if [ ! -d \"test_remote/\" ]; then (git clone https://github.com/N2Sys-EDU/Lab1-myFTP-Test.git test_remote && cp test_remote/ftp_server_std build/ && cp test_remote/ftp_client_std build/ && cd test_remote && mkdir -p build && cd build && cmake .. && make && cd ../.. && cp test_remote/build/ftp_test build/) fi",
+      "run": "cd build && ./ftp_test --gtest_filter=FTPClient.PutBig",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 5
+    }
+  ]
+}

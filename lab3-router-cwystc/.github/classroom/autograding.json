@@ -1,0 +1,114 @@
+{
+  "tests": [
+    {
+      "name": "Routing.Forward",
+      "setup": "mkdir -p build && if [ ! -d \"test_remote/\" ]; then (git clone https://github.com/N2Sys-EDU/lab3-test.git test_remote && cd test_remote && mkdir -p build && cd build && cmake .. && make && cd ../.. && cp test_remote/build/lab3_test build/ && cp test_remote/libsimulator.a build/) fi && cd build && cmake .. && make",
+      "run": "cd build && ./lab3_test --gtest_filter=Routing.Forward",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "Routing.Accessibility",
+      "setup": "mkdir -p build && if [ ! -d \"test_remote/\" ]; then (git clone https://github.com/N2Sys-EDU/lab3-test.git test_remote && cd test_remote && mkdir -p build && cd build && cmake .. && make && cd ../.. && cp test_remote/build/lab3_test build/ && cp test_remote/libsimulator.a build/) fi && cd build && cmake .. && make",
+      "run": "cd build && ./lab3_test --gtest_filter=Routing.Accessibility",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "Routing.StaticOptimal",
+      "setup": "mkdir -p build && if [ ! -d \"test_remote/\" ]; then (git clone https://github.com/N2Sys-EDU/lab3-test.git test_remote && cd test_remote && mkdir -p build && cd build && cmake .. && make && cd ../.. && cp test_remote/build/lab3_test build/ && cp test_remote/libsimulator.a build/) fi && cd build && cmake .. && make",
+      "run": "cd build && ./lab3_test --gtest_filter=Routing.StaticOptimal",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "Routing.DynamicOptimalAdd",
+      "setup": "mkdir -p build && if [ ! -d \"test_remote/\" ]; then (git clone https://github.com/N2Sys-EDU/lab3-test.git test_remote && cd test_remote && mkdir -p build && cd build && cmake .. && make && cd ../.. && cp test_remote/build/lab3_test build/ && cp test_remote/libsimulator.a build/) fi && cd build && cmake .. && make",
+      "run": "cd build && ./lab3_test --gtest_filter=Routing.DynamicOptimalAdd",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "Routing.DynamicOptimalDel",
+      "setup": "mkdir -p build && if [ ! -d \"test_remote/\" ]; then (git clone https://github.com/N2Sys-EDU/lab3-test.git test_remote && cd test_remote && mkdir -p build && cd build && cmake .. && make && cd ../.. && cp test_remote/build/lab3_test build/ && cp test_remote/libsimulator.a build/) fi && cd build && cmake .. && make",
+      "run": "cd build && ./lab3_test --gtest_filter=Routing.DynamicOptimalDel",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "Routing.DynamicOptimalMix",
+      "setup": "mkdir -p build && if [ ! -d \"test_remote/\" ]; then (git clone https://github.com/N2Sys-EDU/lab3-test.git test_remote && cd test_remote && mkdir -p build && cd build && cmake .. && make && cd ../.. && cp test_remote/build/lab3_test build/ && cp test_remote/libsimulator.a build/) fi && cd build && cmake .. && make",
+      "run": "cd build && ./lab3_test --gtest_filter=Routing.DynamicOptimalMix",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "NAT.Basic",
+      "setup": "mkdir -p build && if [ ! -d \"test_remote/\" ]; then (git clone https://github.com/N2Sys-EDU/lab3-test.git test_remote && cd test_remote && mkdir -p build && cd build && cmake .. && make && cd ../.. && cp test_remote/build/lab3_test build/ && cp test_remote/libsimulator.a build/) fi && cd build && cmake .. && make",
+      "run": "cd build && ./lab3_test --gtest_filter=NAT.Basic",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "NAT.Dynamic",
+      "setup": "mkdir -p build && if [ ! -d \"test_remote/\" ]; then (git clone https://github.com/N2Sys-EDU/lab3-test.git test_remote && cd test_remote && mkdir -p build && cd build && cmake .. && make && cd ../.. && cp test_remote/build/lab3_test build/ && cp test_remote/libsimulator.a build/) fi && cd build && cmake .. && make",
+      "run": "cd build && ./lab3_test --gtest_filter=NAT.Dynamic",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "General.Static",
+      "setup": "mkdir -p build && if [ ! -d \"test_remote/\" ]; then (git clone https://github.com/N2Sys-EDU/lab3-test.git test_remote && cd test_remote && mkdir -p build && cd build && cmake .. && make && cd ../.. && cp test_remote/build/lab3_test build/ && cp test_remote/libsimulator.a build/) fi && cd build && cmake .. && make",
+      "run": "cd build && ./lab3_test --gtest_filter=General.Static",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "General.Dynamic1",
+      "setup": "mkdir -p build && if [ ! -d \"test_remote/\" ]; then (git clone https://github.com/N2Sys-EDU/lab3-test.git test_remote && cd test_remote && mkdir -p build && cd build && cmake .. && make && cd ../.. && cp test_remote/build/lab3_test build/ && cp test_remote/libsimulator.a build/) fi && cd build && cmake .. && make",
+      "run": "cd build && ./lab3_test --gtest_filter=General.Dynamic1",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "General.Dynamic2",
+      "setup": "mkdir -p build && if [ ! -d \"test_remote/\" ]; then (git clone https://github.com/N2Sys-EDU/lab3-test.git test_remote && cd test_remote && mkdir -p build && cd build && cmake .. && make && cd ../.. && cp test_remote/build/lab3_test build/ && cp test_remote/libsimulator.a build/) fi && cd build && cmake .. && make",
+      "run": "cd build && ./lab3_test --gtest_filter=General.Dynamic2",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    }
+  ]
+}

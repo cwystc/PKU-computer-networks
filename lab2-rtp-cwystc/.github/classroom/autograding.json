@@ -1,0 +1,364 @@
+{
+  "tests": [
+    {
+      "name": "NO_FAILURE",
+      "setup": "cd Lab2-RTP-Test && cmake . && make && if [ ! -d \"test_remote/\" ]; then (git clone https://github.com/N2Sys-EDU/Lab2-RTP-Test.git test_remote && cp test_remote/Lab2-RTP-Test/test_* . && cp test_remote/Lab2-RTP-Test/src/test.cpp src/ && make) fi",
+      "run": "cd Lab2-RTP-Test && ./rtp_test_all --gtest_filter=RTP.NO_FAILURE",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "NO_FAILURE_OPT",
+      "setup": "cd Lab2-RTP-Test && cmake . && make",
+      "run": "cd Lab2-RTP-Test && ./rtp_test_all --gtest_filter=RTP.NO_FAILURE_OPT",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "RECEIVER_TEST_LOST_DATA",
+      "setup": "cd Lab2-RTP-Test && cmake . && make",
+      "run": "cd Lab2-RTP-Test && ./rtp_test_all --gtest_filter=RTP.RECEIVER_TEST_LOST_DATA",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "RECEIVER_TEST_DUP_DATA",
+      "setup": "cd Lab2-RTP-Test && cmake . && make",
+      "run": "cd Lab2-RTP-Test && ./rtp_test_all --gtest_filter=RTP.RECEIVER_TEST_DUP_DATA",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "RECEIVER_TEST_WRONG_CHKSUM_DATA",
+      "setup": "cd Lab2-RTP-Test && cmake . && make",
+      "run": "cd Lab2-RTP-Test && ./rtp_test_all --gtest_filter=RTP.RECEIVER_TEST_WRONG_CHKSUM_DATA",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "RECEIVER_TEST_REORDER_DATA",
+      "setup": "cd Lab2-RTP-Test && cmake . && make",
+      "run": "cd Lab2-RTP-Test && ./rtp_test_all --gtest_filter=RTP.RECEIVER_TEST_REORDER_DATA",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "RECEIVER_TEST_MIXED_1",
+      "setup": "cd Lab2-RTP-Test && cmake . && make",
+      "run": "cd Lab2-RTP-Test && ./rtp_test_all --gtest_filter=RTP.RECEIVER_TEST_MIXED_1",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "RECEIVER_TEST_MIXED_2",
+      "setup": "cd Lab2-RTP-Test && cmake . && make",
+      "run": "cd Lab2-RTP-Test && ./rtp_test_all --gtest_filter=RTP.RECEIVER_TEST_MIXED_2",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "SENDER_TEST_LOST_ACK",
+      "setup": "cd Lab2-RTP-Test && cmake . && make",
+      "run": "cd Lab2-RTP-Test && ./rtp_test_all --gtest_filter=RTP.SENDER_TEST_LOST_ACK",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "SENDER_TEST_DUP_ACK",
+      "setup": "cd Lab2-RTP-Test && cmake . && make",
+      "run": "cd Lab2-RTP-Test && ./rtp_test_all --gtest_filter=RTP.SENDER_TEST_DUP_ACK",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "SENDER_TEST_WRONG_CHKSUM_ACK",
+      "setup": "cd Lab2-RTP-Test && cmake . && make",
+      "run": "cd Lab2-RTP-Test && ./rtp_test_all --gtest_filter=RTP.SENDER_TEST_WRONG_CHKSUM_ACK",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "SENDER_TEST_REORDER_ACK",
+      "setup": "cd Lab2-RTP-Test && cmake . && make",
+      "run": "cd Lab2-RTP-Test && ./rtp_test_all --gtest_filter=RTP.SENDER_TEST_REORDER_ACK",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "SENDER_TEST_MIXED_1",
+      "setup": "cd Lab2-RTP-Test && cmake . && make",
+      "run": "cd Lab2-RTP-Test && ./rtp_test_all --gtest_filter=RTP.SENDER_TEST_MIXED_1",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "SENDER_TEST_MIXED_2",
+      "setup": "cd Lab2-RTP-Test && cmake . && make",
+      "run": "cd Lab2-RTP-Test && ./rtp_test_all --gtest_filter=RTP.SENDER_TEST_MIXED_2",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "OPT_RECEIVER_TEST_LOST_DATA",
+      "setup": "cd Lab2-RTP-Test && cmake . && make",
+      "run": "cd Lab2-RTP-Test && ./rtp_test_all --gtest_filter=RTP.OPT_RECEIVER_TEST_LOST_DATA",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "OPT_RECEIVER_TEST_DUP_DATA",
+      "setup": "cd Lab2-RTP-Test && cmake . && make",
+      "run": "cd Lab2-RTP-Test && ./rtp_test_all --gtest_filter=RTP.OPT_RECEIVER_TEST_DUP_DATA",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "OPT_RECEIVER_TEST_WRONG_CHKSUM_DATA",
+      "setup": "cd Lab2-RTP-Test && cmake . && make",
+      "run": "cd Lab2-RTP-Test && ./rtp_test_all --gtest_filter=RTP.OPT_RECEIVER_TEST_WRONG_CHKSUM_DATA",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "OPT_RECEIVER_TEST_REORDER_DATA",
+      "setup": "cd Lab2-RTP-Test && cmake . && make",
+      "run": "cd Lab2-RTP-Test && ./rtp_test_all --gtest_filter=RTP.OPT_RECEIVER_TEST_REORDER_DATA",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "OPT_RECEIVER_TEST_MIXED_1",
+      "setup": "cd Lab2-RTP-Test && cmake . && make",
+      "run": "cd Lab2-RTP-Test && ./rtp_test_all --gtest_filter=RTP.OPT_RECEIVER_TEST_MIXED_1",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "OPT_RECEIVER_TEST_MIXED_2",
+      "setup": "cd Lab2-RTP-Test && cmake . && make",
+      "run": "cd Lab2-RTP-Test && ./rtp_test_all --gtest_filter=RTP.OPT_RECEIVER_TEST_MIXED_2",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "OPT_SENDER_TEST_LOST_ACK",
+      "setup": "cd Lab2-RTP-Test && cmake . && make",
+      "run": "cd Lab2-RTP-Test && ./rtp_test_all --gtest_filter=RTP.OPT_SENDER_TEST_LOST_ACK",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "OPT_SENDER_TEST_DUP_ACK",
+      "setup": "cd Lab2-RTP-Test && cmake . && make",
+      "run": "cd Lab2-RTP-Test && ./rtp_test_all --gtest_filter=RTP.OPT_SENDER_TEST_DUP_ACK",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "OPT_SENDER_TEST_WRONG_CHKSUM_ACK",
+      "setup": "cd Lab2-RTP-Test && cmake . && make",
+      "run": "cd Lab2-RTP-Test && ./rtp_test_all --gtest_filter=RTP.OPT_SENDER_TEST_WRONG_CHKSUM_ACK",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "OPT_SENDER_TEST_REORDER_ACK",
+      "setup": "cd Lab2-RTP-Test && cmake . && make",
+      "run": "cd Lab2-RTP-Test && ./rtp_test_all --gtest_filter=RTP.OPT_SENDER_TEST_REORDER_ACK",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "OPT_SENDER_TEST_MIXED_1",
+      "setup": "cd Lab2-RTP-Test && cmake . && make",
+      "run": "cd Lab2-RTP-Test && ./rtp_test_all --gtest_filter=RTP.OPT_SENDER_TEST_MIXED_1",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "OPT_SENDER_TEST_MIXED_2",
+      "setup": "cd Lab2-RTP-Test && cmake . && make",
+      "run": "cd Lab2-RTP-Test && ./rtp_test_all --gtest_filter=RTP.OPT_SENDER_TEST_MIXED_2",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "NO_FAILURE_DDL",
+      "setup": "cd Lab2-RTP-Test && cmake . && make",
+      "run": "cd Lab2-RTP-Test && ./rtp_test_all --gtest_filter=RTP.NO_FAILURE_DDL",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "NO_FAILURE_OPT_DDL",
+      "setup": "cd Lab2-RTP-Test && cmake . && make",
+      "run": "cd Lab2-RTP-Test && ./rtp_test_all --gtest_filter=RTP.NO_FAILURE_OPT_DDL",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "RECEIVER_TEST_LOST_DATA_DDL",
+      "setup": "cd Lab2-RTP-Test && cmake . && make",
+      "run": "cd Lab2-RTP-Test && ./rtp_test_all --gtest_filter=RTP.RECEIVER_TEST_LOST_DATA_DDL",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "RECEIVER_TEST_REORDER_DATA_DDL",
+      "setup": "cd Lab2-RTP-Test && cmake . && make",
+      "run": "cd Lab2-RTP-Test && ./rtp_test_all --gtest_filter=RTP.RECEIVER_TEST_REORDER_DATA_DDL",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "SENDER_TEST_LOST_ACK_DDL",
+      "setup": "cd Lab2-RTP-Test && cmake . && make",
+      "run": "cd Lab2-RTP-Test && ./rtp_test_all --gtest_filter=RTP.SENDER_TEST_LOST_ACK_DDL",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "SENDER_TEST_REORDER_ACK_DDL",
+      "setup": "cd Lab2-RTP-Test && cmake . && make",
+      "run": "cd Lab2-RTP-Test && ./rtp_test_all --gtest_filter=RTP.SENDER_TEST_REORDER_ACK_DDL",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "OPT_RECEIVER_TEST_LOST_DATA_DDL",
+      "setup": "cd Lab2-RTP-Test && cmake . && make",
+      "run": "cd Lab2-RTP-Test && ./rtp_test_all --gtest_filter=RTP.OPT_RECEIVER_TEST_LOST_DATA_DDL",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "OPT_RECEIVER_TEST_REORDER_DATA_DDL",
+      "setup": "cd Lab2-RTP-Test && cmake . && make",
+      "run": "cd Lab2-RTP-Test && ./rtp_test_all --gtest_filter=RTP.OPT_RECEIVER_TEST_REORDER_DATA_DDL",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "OPT_SENDER_TEST_LOST_ACK_DDL",
+      "setup": "cd Lab2-RTP-Test && cmake . && make",
+      "run": "cd Lab2-RTP-Test && ./rtp_test_all --gtest_filter=RTP.OPT_SENDER_TEST_LOST_ACK_DDL",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "OPT_SENDER_TEST_REORDER_DDL",
+      "setup": "cd Lab2-RTP-Test && cmake . && make",
+      "run": "cd Lab2-RTP-Test && ./rtp_test_all --gtest_filter=RTP.OPT_SENDER_TEST_REORDER_DDL",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    }
+  ]
+}

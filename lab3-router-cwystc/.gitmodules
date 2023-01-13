@@ -1,0 +1,4 @@
+[submodule "test_local"]
+	path = test_local
+	url = git@github.com:N2Sys-EDU/lab3-test.git
+	branch = main
